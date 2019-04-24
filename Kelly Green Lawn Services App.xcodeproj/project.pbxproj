@@ -8,20 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		E8C0F698226FAFBE00B63BEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0F697226FAFBE00B63BEA /* AppDelegate.swift */; };
-		E8C0F69A226FAFBF00B63BEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0F699226FAFBF00B63BEA /* ViewController.swift */; };
+		E8C0F69A226FAFBF00B63BEA /* MeetTheTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0F699226FAFBF00B63BEA /* MeetTheTeamViewController.swift */; };
 		E8C0F69D226FAFBF00B63BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C0F69B226FAFBF00B63BEA /* Main.storyboard */; };
 		E8C0F69F226FAFC000B63BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C0F69E226FAFC000B63BEA /* Assets.xcassets */; };
 		E8C0F6A2226FAFC000B63BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C0F6A0226FAFC000B63BEA /* LaunchScreen.storyboard */; };
+		E8C0F6AA226FB16200B63BEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8C0F6A9226FB16200B63BEA /* GoogleService-Info.plist */; };
+		E8C0F6AC226FBB8800B63BEA /* IntroScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0F6AB226FBB8800B63BEA /* IntroScreenViewController.swift */; };
+		E8C0F6AE226FCFE400B63BEA /* ExploreServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0F6AD226FCFE400B63BEA /* ExploreServicesViewController.swift */; };
+		E8C0F6B0226FD01700B63BEA /* BookingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0F6AF226FD01700B63BEA /* BookingListViewController.swift */; };
+		E8C0F6B2226FD0A100B63BEA /* BookingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0F6B1226FD0A100B63BEA /* BookingTableViewController.swift */; };
+		E8C0F6B4226FD19000B63BEA /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0F6B3226FD19000B63BEA /* AboutViewController.swift */; };
+		E8C0F6B6226FE78C00B63BEA /* Bookings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0F6B5226FE78C00B63BEA /* Bookings.swift */; };
+		E8C0F6B8226FE82900B63BEA /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0F6B7226FE82900B63BEA /* Booking.swift */; };
+		F3133009C6C8B0650C34732C /* Pods_Kelly_Green_Lawn_Services_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6D97BDB32F189D9AFFE0F6 /* Pods_Kelly_Green_Lawn_Services_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F6D97BDB32F189D9AFFE0F6 /* Pods_Kelly_Green_Lawn_Services_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kelly_Green_Lawn_Services_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9950CEF1F7362B995EC5A478 /* Pods-Kelly Green Lawn Services App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kelly Green Lawn Services App.debug.xcconfig"; path = "Target Support Files/Pods-Kelly Green Lawn Services App/Pods-Kelly Green Lawn Services App.debug.xcconfig"; sourceTree = "<group>"; };
+		A8B2EA6F539888E1646BA38C /* Pods-Kelly Green Lawn Services App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kelly Green Lawn Services App.release.xcconfig"; path = "Target Support Files/Pods-Kelly Green Lawn Services App/Pods-Kelly Green Lawn Services App.release.xcconfig"; sourceTree = "<group>"; };
 		E8C0F694226FAFBE00B63BEA /* Kelly Green Lawn Services App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kelly Green Lawn Services App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C0F697226FAFBE00B63BEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8C0F699226FAFBF00B63BEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8C0F699226FAFBF00B63BEA /* MeetTheTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetTheTeamViewController.swift; sourceTree = "<group>"; };
 		E8C0F69C226FAFBF00B63BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8C0F69E226FAFC000B63BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8C0F6A1226FAFC000B63BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8C0F6A3226FAFC000B63BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C0F6A9226FB16200B63BEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E8C0F6AB226FBB8800B63BEA /* IntroScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreenViewController.swift; sourceTree = "<group>"; };
+		E8C0F6AD226FCFE400B63BEA /* ExploreServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreServicesViewController.swift; sourceTree = "<group>"; };
+		E8C0F6AF226FD01700B63BEA /* BookingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingListViewController.swift; sourceTree = "<group>"; };
+		E8C0F6B1226FD0A100B63BEA /* BookingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingTableViewController.swift; sourceTree = "<group>"; };
+		E8C0F6B3226FD19000B63BEA /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		E8C0F6B5226FE78C00B63BEA /* Bookings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookings.swift; sourceTree = "<group>"; };
+		E8C0F6B7226FE82900B63BEA /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3133009C6C8B0650C34732C /* Pods_Kelly_Green_Lawn_Services_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30493C3CDEA418E666FC9D65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9950CEF1F7362B995EC5A478 /* Pods-Kelly Green Lawn Services App.debug.xcconfig */,
+				A8B2EA6F539888E1646BA38C /* Pods-Kelly Green Lawn Services App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B56662A126EE4B20EE510CFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F6D97BDB32F189D9AFFE0F6 /* Pods_Kelly_Green_Lawn_Services_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E8C0F68B226FAFBE00B63BEA = {
 			isa = PBXGroup;
 			children = (
 				E8C0F696226FAFBE00B63BEA /* Kelly Green Lawn Services App */,
 				E8C0F695226FAFBE00B63BEA /* Products */,
+				30493C3CDEA418E666FC9D65 /* Pods */,
+				B56662A126EE4B20EE510CFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +95,19 @@
 			isa = PBXGroup;
 			children = (
 				E8C0F697226FAFBE00B63BEA /* AppDelegate.swift */,
-				E8C0F699226FAFBF00B63BEA /* ViewController.swift */,
+				E8C0F6B5226FE78C00B63BEA /* Bookings.swift */,
+				E8C0F6B7226FE82900B63BEA /* Booking.swift */,
+				E8C0F6AB226FBB8800B63BEA /* IntroScreenViewController.swift */,
+				E8C0F6AD226FCFE400B63BEA /* ExploreServicesViewController.swift */,
+				E8C0F699226FAFBF00B63BEA /* MeetTheTeamViewController.swift */,
+				E8C0F6B3226FD19000B63BEA /* AboutViewController.swift */,
+				E8C0F6AF226FD01700B63BEA /* BookingListViewController.swift */,
+				E8C0F6B1226FD0A100B63BEA /* BookingTableViewController.swift */,
 				E8C0F69B226FAFBF00B63BEA /* Main.storyboard */,
 				E8C0F69E226FAFC000B63BEA /* Assets.xcassets */,
 				E8C0F6A0226FAFC000B63BEA /* LaunchScreen.storyboard */,
 				E8C0F6A3226FAFC000B63BEA /* Info.plist */,
+				E8C0F6A9226FB16200B63BEA /* GoogleService-Info.plist */,
 			);
 			path = "Kelly Green Lawn Services App";
 			sourceTree = "<group>";
@@ -71,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8C0F6A6226FAFC000B63BEA /* Build configuration list for PBXNativeTarget "Kelly Green Lawn Services App" */;
 			buildPhases = (
+				61DCD8DFAE2142A81FED91B3 /* [CP] Check Pods Manifest.lock */,
 				E8C0F690226FAFBE00B63BEA /* Sources */,
 				E8C0F691226FAFBE00B63BEA /* Frameworks */,
 				E8C0F692226FAFBE00B63BEA /* Resources */,
+				E17CE5B2FAFFC846A00A40DD /* [CP] Embed Pods Frameworks */,
+				CE53DCC8BFE003F2B3D2684A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8C0F6A2226FAFC000B63BEA /* LaunchScreen.storyboard in Resources */,
+				E8C0F6AA226FB16200B63BEA /* GoogleService-Info.plist in Resources */,
 				E8C0F69F226FAFC000B63BEA /* Assets.xcassets in Resources */,
 				E8C0F69D226FAFBF00B63BEA /* Main.storyboard in Resources */,
 			);
@@ -130,13 +182,139 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		61DCD8DFAE2142A81FED91B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kelly Green Lawn Services App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE53DCC8BFE003F2B3D2684A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kelly Green Lawn Services App/Pods-Kelly Green Lawn Services App-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAnonymousAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseEmailAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAnonymousAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseEmailAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kelly Green Lawn Services App/Pods-Kelly Green Lawn Services App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E17CE5B2FAFFC846A00A40DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kelly Green Lawn Services App/Pods-Kelly Green Lawn Services App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kelly Green Lawn Services App/Pods-Kelly Green Lawn Services App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E8C0F690226FAFBE00B63BEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8C0F69A226FAFBF00B63BEA /* ViewController.swift in Sources */,
+				E8C0F6B2226FD0A100B63BEA /* BookingTableViewController.swift in Sources */,
+				E8C0F6B8226FE82900B63BEA /* Booking.swift in Sources */,
+				E8C0F6B6226FE78C00B63BEA /* Bookings.swift in Sources */,
+				E8C0F6B0226FD01700B63BEA /* BookingListViewController.swift in Sources */,
+				E8C0F6AE226FCFE400B63BEA /* ExploreServicesViewController.swift in Sources */,
+				E8C0F6B4226FD19000B63BEA /* AboutViewController.swift in Sources */,
+				E8C0F69A226FAFBF00B63BEA /* MeetTheTeamViewController.swift in Sources */,
 				E8C0F698226FAFBE00B63BEA /* AppDelegate.swift in Sources */,
+				E8C0F6AC226FBB8800B63BEA /* IntroScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +458,7 @@
 		};
 		E8C0F6A7226FAFC000B63BEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9950CEF1F7362B995EC5A478 /* Pods-Kelly Green Lawn Services App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +477,7 @@
 		};
 		E8C0F6A8226FAFC000B63BEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8B2EA6F539888E1646BA38C /* Pods-Kelly Green Lawn Services App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

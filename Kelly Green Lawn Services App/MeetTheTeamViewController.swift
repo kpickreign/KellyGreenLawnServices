@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MeetTheTeamViewController.swift
 //  Kelly Green Lawn Services App
 //
 //  Created by Kelly Pickreign on 4/23/19.
@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import CoreLocation
+import Firebase
+import FirebaseUI
+import GoogleSignIn
 
-class ViewController: UIViewController {
+class MeetTheTeamViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
 
