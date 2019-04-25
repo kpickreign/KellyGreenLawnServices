@@ -44,6 +44,13 @@ class BookingTableViewController: UITableViewController {
 
     }
     
+    @IBAction func addressTextFieldClicked(_ sender: UITextField) {
+        let autocompleteController = GMSAutocompleteViewController()
+        autocompleteController.delegate = self
+        present(autocompleteController, animated: true, completion: nil)
+    }
+    
+    
     func updateUserInterfaace() {
         nameField.text = booking.name
         addressField.text = booking.address
@@ -77,9 +84,11 @@ class BookingTableViewController: UITableViewController {
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
         // When reusing this code, the only changes required may be to spot.saveData (you'll likley have a different object, and it is possible that you might pass in parameters if you're saving to a longer document reference path
         updateDataFromInterface()
-        booking.saveData { success in
+        booking.saveData
+            { success in
             if success {
                 self.leaveViewController()
+                print("success")
             } else {
                 print("*** ERROR: Couldn't leave this view controller because data wasn't saved.")
             }
@@ -88,6 +97,37 @@ class BookingTableViewController: UITableViewController {
     
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
         leaveViewController()
+    }
+}
+
+extension BookingTableViewController: GMSAutocompleteViewControllerDelegate {
+    
+    // Handle the user's selection.
+    func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
+        updateDataFromInterface() // Get what the user has entered before calling updateUserInterface, below
+        booking.address = place.name ?? "<place unnamed>"
+        booking.coordinate = place.coordinate
+        dismiss(animated: true, completion: nil)
+        updateUserInterfaace()
+    }
+    
+    func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
+        // TODO: handle the error.
+        print("Error: ", error.localizedDescription)
+    }
+    
+    // User canceled the operation.
+    func wasCancelled(_ viewController: GMSAutocompleteViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    // Turn the network activity indicator on and off again.
+    func didRequestAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    }
+    
+    func didUpdateAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
 }
 

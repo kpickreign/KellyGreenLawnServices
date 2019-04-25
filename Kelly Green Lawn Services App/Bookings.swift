@@ -1,5 +1,5 @@
 //
-//  Booking.swift
+//  Bookings.swift
 //  Kelly Green Lawn Services App
 //
 //  Created by Kelly Pickreign on 4/23/19.
@@ -33,9 +33,9 @@ class Bookings {
             // there are querySnapshot!.documents.count documents in teh spots snapshot
             for document in querySnapshot!.documents {
                 // You'll have to be sure you've created an initializer in the singular class (Spot, below) that acepts a dictionary.
-                let book = Booking(dictionary: document.data())
-                book.documentID = document.documentID
-                self.bookingArray.append(book)
+                let booking = Booking(dictionary: document.data())
+                booking.documentID = document.documentID
+                self.bookingArray.append(booking)
             }
             completed()
         }

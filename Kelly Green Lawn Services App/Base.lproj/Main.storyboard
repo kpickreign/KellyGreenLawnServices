@@ -172,13 +172,34 @@
                     <view key="view" contentMode="scaleToFill" id="O8Z-Lh-hbv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWi-qi-HXh">
+                                <rect key="frame" x="97" y="88" width="221" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="harvard" translatesAutoresizingMaskIntoConstraints="NO" id="N47-YX-3PJ">
+                                <rect key="frame" x="65" y="178" width="285" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGz-2n-LHs">
+                                <rect key="frame" x="20" y="394" width="374" height="357"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">We are located in Harvard Mass. and do business locally as well as in neighboring towns. Kelly Green Lawn Services was founded with family in mind; we are both family owned and operated. We provide equiptment such as lawn mowers, leaf blowers, rakes, and of course, our dependable labour. Contact us at kelly@kellygreenlawnservices.com or 9789449690 for any further questions, and we look forward to doing business with you! ~ Kelly, Chris and Henry</string>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.98966697420000005" green="1" blue="0.81540366519999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="V0c-99-VKg"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EgM-kE-cPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1699" y="1467"/>
+            <point key="canvasLocation" x="1698.5507246376812" y="1466.5178571428571"/>
         </scene>
         <!--Booking List View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -192,12 +213,21 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" red="0.98966697420000005" green="1" blue="0.81540366519999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="gAG-qQ-qvz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="aNL-SE-Oi4" style="IBUITableViewCellStyleDefault" id="gAG-qQ-qvz">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gAG-qQ-qvz" id="hsA-w7-OsC">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aNL-SE-Oi4">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="0i0-X9-bhg" kind="show" identifier="ShowBooking" id="NeB-7D-ehk"/>
@@ -279,6 +309,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="addressTextFieldClicked:" destination="0i0-X9-bhg" eventType="touchUpInside" id="tCx-rJ-lj8"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -507,7 +540,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Efq-2M-A6K">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3k-nB-VjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="syB-Q3-kud" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FOS-b7-JdD">
@@ -519,6 +551,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dwK-IQ-dWu"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3k-nB-VjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2495.6521739130435" y="20.758928571428569"/>
         </scene>
@@ -561,9 +594,10 @@
     </scenes>
     <resources>
         <image name="chris" width="373" height="461"/>
-        <image name="henry" width="200" height="200"/>
+        <image name="harvard" width="221" height="228"/>
+        <image name="henry" width="150" height="150"/>
         <image name="kelly" width="427" height="538"/>
-        <image name="lawnMower" width="1023" height="683"/>
+        <image name="lawnMower" width="245.52000427246094" height="163.91999816894531"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="jy9-qq-Efe"/>
