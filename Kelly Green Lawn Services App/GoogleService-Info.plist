@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>865033266212-rfc0n11u1bqgkdi43ga3sacvoi9pj3da.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.865033266212-rfc0n11u1bqgkdi43ga3sacvoi9pj3da</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAnnrg-hd3j-0DjS4_x-Vppnx2w6nLbWEc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>865033266212</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>k.pickreign.Kelly-Green-Lawn-Services-App</string>
+	<key>PROJECT_ID</key>
+	<string>kelly-green-lawn-services-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>kelly-green-lawn-services-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:865033266212:ios:b87c77505c0a768a</string>
+	<key>DATABASE_URL</key>
+	<string>https://kelly-green-lawn-services-app.firebaseio.com</string>
+</dict>
+</plist>
