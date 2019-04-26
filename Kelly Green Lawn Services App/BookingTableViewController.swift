@@ -58,7 +58,7 @@ class BookingTableViewController: UITableViewController {
         timeField.text = booking.time
         desiredServiceField.text = booking.desiredService
         additionalNotesTextView.text = booking.additionalNotes
-       // updateMap()
+        updateMap()
     }
     
     func updateDataFromInterface() {
@@ -70,6 +70,12 @@ class BookingTableViewController: UITableViewController {
         booking.desiredService = desiredServiceField.text!
         booking.additionalNotes = additionalNotesTextView.text
         
+    }
+    
+    func updateMap() {
+        mapView.removeAnnotations(mapView.annotations)
+        mapView.addAnnotation(booking)
+        mapView.setCenter(booking.coordinate, animated: true)
     }
     
     func leaveViewController() {
