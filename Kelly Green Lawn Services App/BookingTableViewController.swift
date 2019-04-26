@@ -25,13 +25,14 @@ class BookingTableViewController: UITableViewController {
     
     var booking: Booking!
     var regionDistance: CLLocationDistance = 50000 // half mile, meters
-
+    var editingABooking = true
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if booking == nil {
+            editingABooking = false
             booking = Booking()
         }
         
@@ -44,11 +45,14 @@ class BookingTableViewController: UITableViewController {
 
     }
     
+
+    
     @IBAction func addressTextFieldClicked(_ sender: UITextField) {
         let autocompleteController = GMSAutocompleteViewController()
         autocompleteController.delegate = self
         present(autocompleteController, animated: true, completion: nil)
     }
+    
     
     
     func updateUserInterfaace() {
@@ -79,8 +83,9 @@ class BookingTableViewController: UITableViewController {
     }
     
     func leaveViewController() {
+        
         let isPresentingInAddMode = presentingViewController is UINavigationController
-        if isPresentingInAddMode {
+        if isPresentingInAddMode && !editingABooking {
             dismiss(animated: true, completion: nil)
         } else {
             navigationController?.popViewController(animated: true)
@@ -90,8 +95,7 @@ class BookingTableViewController: UITableViewController {
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
         // When reusing this code, the only changes required may be to spot.saveData (you'll likley have a different object, and it is possible that you might pass in parameters if you're saving to a longer document reference path
         updateDataFromInterface()
-        booking.saveData
-            { success in
+        booking.saveData { success in
             if success {
                 self.leaveViewController()
                 print("success")

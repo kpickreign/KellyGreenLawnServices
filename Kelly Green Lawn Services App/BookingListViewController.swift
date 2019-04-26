@@ -15,6 +15,8 @@ import FirebaseUI
 class BookingListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var editBarButton: UIBarButtonItem!
+    @IBOutlet weak var addBarButton: UIBarButtonItem!
     
 //    var authUI: FUIAuth!
     var bookings: Bookings!
@@ -55,7 +57,27 @@ class BookingListViewController: UIViewController {
         }
     }
     
-
+    @IBAction func editBarButtonPressed(_ sender: UIBarButtonItem) {
+        if tableView.isEditing == true {
+            tableView.setEditing(false, animated: true)
+            editBarButton.title = "Edit"
+            addBarButton.isEnabled = true
+        } else {
+            tableView.setEditing(true, animated: true)
+            editBarButton.title = "Done"
+            addBarButton.isEnabled = false
+        }
+    }
+    
+    @IBAction func cancelBarButtonPressed(_ sender: UIBarButtonItem) {
+        let isPresentingInAddMode = presentingViewController is UINavigationController
+        if isPresentingInAddMode {
+            dismiss(animated: true, completion: nil)
+        } else {
+            navigationController?.popViewController(animated: true)
+        }
+    }
+    
 
 }
 
@@ -72,6 +94,68 @@ extension BookingListViewController: UITableViewDelegate, UITableViewDataSource 
         cell.detailTextLabel?.text = bookings.bookingArray[indexPath.row].date1
         return cell
     }
+    
+//    //MARK:- TableView Editing Function
+//
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            bookings.bookingArray[indexPath.row].deleteData() { success in
+                if success {
+                    print("Success!!")
+                } else {
+                    print("😡 Delete unsuccessful.")
+                }
+            }
+        }
+    }
+
+//    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+//        let itemToMove = bookings.bookingArray[sourceIndexPath.row]
+//        bookings.bookingArray.remove(at: sourceIndexPath.row)
+//        bookings.bookingArray.insert(itemToMove, at: destinationIndexPath.row)
+////        saveLocations()
+//    }
+//
+//    //MARK:- TableView Methods to Freeze The First Cell
+//    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+//        //        if indexPath.row != 0 {
+//        //            return true
+//        //        } else {
+//        //            return false
+//        //        }
+//        return (indexPath.row != 0 ? true:false)
+//    }
+//
+//    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+//        //        if indexPath.row != 0 {
+//        //            return true
+//        //        } else {
+//        //            return false
+//        //        }
+//        return (indexPath.row != 0 ? true:false)
+//
+//    }
+//    func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
+//        if proposedDestinationIndexPath.row == 0 {
+//            return sourceIndexPath
+//        } else {
+//            return proposedDestinationIndexPath
+//        }
+//
+//    }
+//
+////    func updateTable(place: GMSPlace) {
+////        let newIndexPath = IndexPath(row: locationsArray.count, section: 0)
+////
+////        let latitude = place.coordinate.latitude
+////        let longitude = place.coordinate.longitude
+////        let newCoordinates = "\(latitude),\(longitude)"
+////        let newWeatherLocation = WeatherLocation(name: place.name!, coordinates: newCoordinates)
+////
+////        locationsArray.append(newWeatherLocation)
+////        tableView.insertRows(at: [newIndexPath], with: .automatic)
+////        saveLocations()
+////    }
 }
 
 

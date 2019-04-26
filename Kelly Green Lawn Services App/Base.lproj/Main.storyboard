@@ -210,7 +210,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QlO-4O-EGf">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="726"/>
                                 <color key="backgroundColor" red="0.98966697420000005" green="1" blue="0.81540366519999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="aNL-SE-Oi4" detailTextLabel="xJt-wf-BOL" style="IBUITableViewCellStyleSubtitle" id="gAG-qQ-qvz">
@@ -223,6 +223,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aNL-SE-Oi4">
                                                     <rect key="frame" x="20" y="-5" width="41" height="28"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" red="0.98966697420000005" green="1" blue="0.81540366519999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -230,36 +231,67 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xJt-wf-BOL">
                                                     <rect key="frame" x="20" y="23" width="67.5" height="27"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" red="0.98966697420000005" green="1" blue="0.81540366519999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.98966697420000005" green="1" blue="0.81540366519999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <segue destination="0i0-X9-bhg" kind="show" identifier="ShowBooking" id="NeB-7D-ehk"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vo-oB-Kyb">
+                                <rect key="frame" x="0.0" y="814" width="414" height="82"/>
+                                <items>
+                                    <barButtonItem title="Edit" id="WKW-E5-Qc7">
+                                        <connections>
+                                            <action selector="editBarButtonPressed:" destination="BYZ-38-t0r" id="y6d-M4-sEz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zW9-RK-3Rj"/>
+                                    <barButtonItem systemItem="add" id="Wib-Z0-HVJ">
+                                        <connections>
+                                            <segue destination="5io-67-Oa0" kind="presentation" identifier="AddBooking" id="tta-rZ-cd3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QlO-4O-EGf" secondAttribute="bottom" id="LKI-e1-AVf"/>
+                            <constraint firstItem="9vo-oB-Kyb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="462-Xw-IHC"/>
+                            <constraint firstAttribute="bottom" secondItem="9vo-oB-Kyb" secondAttribute="bottom" id="6zC-Td-vaW"/>
+                            <constraint firstItem="QlO-4O-EGf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AhI-7d-XG9"/>
+                            <constraint firstItem="9vo-oB-Kyb" firstAttribute="top" secondItem="QlO-4O-EGf" secondAttribute="bottom" id="Fbb-s4-gOe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QlO-4O-EGf" secondAttribute="bottom" constant="48" id="LKI-e1-AVf"/>
+                            <constraint firstItem="9vo-oB-Kyb" firstAttribute="top" secondItem="QlO-4O-EGf" secondAttribute="bottom" id="MHr-g1-na8"/>
+                            <constraint firstItem="9vo-oB-Kyb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ocu-cM-Zke"/>
                             <constraint firstItem="QlO-4O-EGf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Sjq-L6-1bF"/>
+                            <constraint firstAttribute="bottom" secondItem="9vo-oB-Kyb" secondAttribute="bottom" id="TvN-eL-gsR"/>
                             <constraint firstItem="QlO-4O-EGf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UqA-H3-GRT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QlO-4O-EGf" secondAttribute="trailing" id="fsG-f7-uZt"/>
+                            <constraint firstItem="QlO-4O-EGf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mBh-9K-y8C"/>
+                            <constraint firstItem="9vo-oB-Kyb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nLp-4n-rAX"/>
+                            <constraint firstAttribute="trailing" secondItem="9vo-oB-Kyb" secondAttribute="trailing" id="pot-27-4mX"/>
+                            <constraint firstItem="QlO-4O-EGf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xdb-5W-7X5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="1O9-Fw-ywv">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wib-Z0-HVJ">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="ARI-gk-QDZ">
                             <connections>
-                                <segue destination="5io-67-Oa0" kind="presentation" identifier="AddBooking" id="tta-rZ-cd3"/>
+                                <action selector="cancelBarButtonPressed:" destination="BYZ-38-t0r" id="n9S-SS-EcY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addBarButton" destination="Wib-Z0-HVJ" id="JRH-uk-rh0"/>
+                        <outlet property="editBarButton" destination="WKW-E5-Qc7" id="eMZ-uZ-IET"/>
                         <outlet property="tableView" destination="QlO-4O-EGf" id="Yfn-XK-e6Y"/>
                     </connections>
                 </viewController>
@@ -317,7 +349,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="addressTextFieldClicked:" destination="0i0-X9-bhg" eventType="touchUpInside" id="tCx-rJ-lj8"/>
+                                                        <action selector="addressTextFieldClicked:" destination="0i0-X9-bhg" eventType="editingDidBegin" id="3vu-vg-QLI"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -607,7 +639,7 @@
         <image name="lawnMower" width="245.52000427246094" height="163.91999816894531"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jy9-qq-Efe"/>
+        <segue reference="hjk-iw-3fZ"/>
         <segue reference="NeB-7D-ehk"/>
     </inferredMetricsTieBreakers>
 </document>

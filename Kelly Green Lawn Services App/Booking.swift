@@ -120,6 +120,19 @@ class Booking: NSObject, MKAnnotation {
     }
     
     
+    func deleteData(completed: @escaping (Bool) -> ()) {
+        let db = Firestore.firestore()
+        db.collection("bookings").document(documentID).delete() { error in
+            if let error = error {
+                print("😡 ERROR: deleting review documentID \(self.documentID) \(error.localizedDescription)")
+                completed(false)
+            } else {
+                    completed(true)
+            }
+        }
+    }
+    
+    
 }
 
 
