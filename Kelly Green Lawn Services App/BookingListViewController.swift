@@ -17,6 +17,8 @@ class BookingListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var editBarButton: UIBarButtonItem!
     @IBOutlet weak var addBarButton: UIBarButtonItem!
+    @IBOutlet weak var cancelBarButton: UIBarButtonItem!
+    
     
 //    var authUI: FUIAuth!
     var bookings: Bookings!
@@ -62,10 +64,13 @@ class BookingListViewController: UIViewController {
             tableView.setEditing(false, animated: true)
             editBarButton.title = "Edit"
             addBarButton.isEnabled = true
+            cancelBarButton.isEnabled = true
         } else {
             tableView.setEditing(true, animated: true)
             editBarButton.title = "Done"
             addBarButton.isEnabled = false
+            cancelBarButton.isEnabled = false
+            
         }
     }
     

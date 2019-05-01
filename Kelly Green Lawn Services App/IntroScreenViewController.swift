@@ -112,17 +112,17 @@ extension IntroScreenViewController: FUIAuthDelegate {
         // Set background color to white
         loginViewController.view.backgroundColor = UIColor.white
         
-        //        // Create a frame for a UIImageView to hold our logo
-        //        let marginInsets: CGFloat = 16 // logo will be 16 points from L and R margins
-        //        let imageHeight: CGFloat = 225 // the height of our logo
-        //        let imageY = self.view.center.y - imageHeight // places bottom of UIImageView in the center of the login screen
-        //        let logoFrame = CGRect(x: self.view.frame.origin.x + marginInsets, y: imageY, width: self.view.frame.width - (marginInsets*2), height: imageHeight)
-        //
-        //        // Create the UIImageView using the frame created above & add the "logo" image
-        //        let logoImageView = UIImageView(frame: logoFrame)
-        //        logoImageView.image = UIImage(named: "logo")
-        //        logoImageView.contentMode = .scaleAspectFit // Set imageView to Aspect Fit
-        //        loginViewController.view.addSubview(logoImageView) // Add ImageView to the login controller's main view
+                // Create a frame for a UIImageView to hold our logo
+                let marginInsets: CGFloat = 16 // logo will be 16 points from L and R margins
+                let imageHeight: CGFloat = 225 // the height of our logo
+                let imageY = self.view.center.y - imageHeight // places bottom of UIImageView in the center of the login screen
+                let logoFrame = CGRect(x: self.view.frame.origin.x + marginInsets, y: imageY, width: self.view.frame.width - (marginInsets*2), height: imageHeight)
+        
+                // Create the UIImageView using the frame created above & add the "logo" image
+                let logoImageView = UIImageView(frame: logoFrame)
+                logoImageView.image = UIImage(named: "logo")
+                logoImageView.contentMode = .scaleAspectFit // Set imageView to Aspect Fit
+                loginViewController.view.addSubview(logoImageView) // Add ImageView to the login controller's main view
         return loginViewController
     }
 }
